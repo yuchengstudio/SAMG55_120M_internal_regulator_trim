@@ -1,6 +1,7 @@
 # SAMG55_120M_internal_regulator_trim
 2018/5/1
 //当主频跑在120M时，内部regulator是需要通过读取Flash 的唯一识别数据来校准的，因为默认是校准100M的
+
 	#if SAMG55
 		/* Set the trim value when system run near 120M */
 		if ((SystemCoreClock <= (CHIP_FREQ_CPU_MAX + (CHIP_FREQ_CPU_MAX >> 3))) &&
